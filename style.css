@@ -1,0 +1,46 @@
+body {
+    margin: 0;
+}
+
+header {
+    background-image: url("./img/bg.jpg");
+    height: 800px;
+    
+}
+
+#logo {
+    width: 100px;
+    height: 100px;
+    margin: 40px;
+}
+
+#container {
+    display: flex;
+    justify-content: space-between;
+}
+
+#nav-list {
+    list-style-type: none;
+    display: flex;
+    margin-right: 40px;
+}
+
+#nav-list>li {
+    margin: 40px;
+}
+
+#tagline {
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    margin-top:150px;
+    
+}
+
+#tagline h1 {
+    width: 500px;
+    color: white;
+    font-size: 8vh;
+    background-color: rgb(29, 156, 117,.5`);
+    
+}
