@@ -32,7 +32,7 @@
             <img id="logo" src="./img/logo.png" alt="recycling logo">
             <nav>
                 <ul id="nav-list">
-                    <li><a href="#news">News</a></li>
+                    <li><a href="#news">Home</a></li>
                     <li><a href="#contact">Contact</a></li>
                     <li><a href="#about">About</a></li>
                 </ul>
@@ -52,10 +52,83 @@
     </header>
     <main>
         <article>
-            <section id="">
+            <section id="text-content">
+                <h1>“…soon our dumpster was less full and the paper, cardboard, cans and glass and plastic bottles were
+                    getting a
+                    second
+                    chance at becoming resources for other to use again. It felt great to do this for our community.”
+                </h1>
+                <h1>We collect y`our glass and plastic bottles <br> from your doorstep and take it to be recycled. <br>
+                    You can also
+                    recycle food waste too.</h1>
             </section>
-            <section id="how-it-works"></section>
-            <section id="form"></section>
+            <section id="how-it-works">
+                <header>
+                    <h1>How It Works</h1>
+                </header>
+                <main>
+                    <div class="steps">
+                        <h3>Gather your recycling</h3>
+                        <p>Separate, gather, and find the approximate weight of your recycling</p>
+                    </div>
+                    <img src="img/arrow.png" alt="arrow" class="arrow">
+                    <div class="steps">
+                        <h3>Fill out the form below</h3>
+                        <p>Use the form below to enter your information and select after you submit</p>
+                    </div>
+                    <img src="img/arrow.png" alt="arrow" class="arrow">
+                    <div class="steps">
+                        <h3>Wait for pickup!</h3>
+                        <p>That's it! Your job is done and your recycling will soon be collected!</p>
+                    </div>
+                </main>
+            </section>
+            <section id="form">
+                <form action="">
+                    <label for="first-name"></label>
+                    <input type="text" id="first-name" placeholder="First Name" required>
+
+                    <label for="surname"></label>
+                    <input type="text" id="surname" placeholder="Surname" required>
+
+                    <label for="email"></label>
+                    <input type="email" name="email" id="email" placeholder="Email" required>
+
+                    <label for="phone-number"></label>
+                    <input type="tel" name="phone-number" id="phone-number" placeholder="Phone Number" required>
+
+
+                    <label for="address"></label>
+                    <input type="text" name="address" id="address" placeholder="Address" required>
+
+                    <label for="address-2"></label>
+                    <input type="text" name="address-2" id="address-2" placeholder="Address">
+
+                    <section class="ct-pc">
+                        <label for="city" class="ct"></label>
+                        <input type="text" name="city" id="city" placeholder="City" required>
+
+                        <label for="postcode" class="pc"></label>
+                        <input type="text" name="postcode" id="post-code" placeholder="Postcode" required>
+
+                    </section>
+                    <label for="materials">Materials</label>
+                    <p>*
+                        <em>Hold down CTRL(Windows) or CMD(Mac) buttons on your keyboard to select multiple
+                            options</em>
+                    </p>
+                    <select name="city" id="city" multiple>
+                        <option value="0" selected disabled><em>Select materials</em></option>
+                        <option value="1">Paper</option>
+                        <option value="2">Glass</option>
+                        <option value="3">Cans</option>
+                        <option value="4">Plastic</option>
+                    </select>
+                    <label for="weight"></label>
+                    <input type="number" name="weight" id="wight" placeholder="Approximate weight">
+                    <button type="submit">Submit</button>
+                </form>
+            </section>
             <section id="testimonials">
                 <div>
                     <h1>Testimonials</h1>
@@ -64,7 +137,8 @@
                     <div class="feedback">
                         <div>
                             <img src="./img/testimonial-img.png" alt="">
-                            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Sed repellendus nostrum eligendi
+                            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Sed repellendus nostrum
+                                eligendi
                                 esse voluptatem,</p>
 
                         </div>
@@ -79,7 +153,8 @@
                     <div class="feedback">
                         <div>
                             <img src="./img/testimonial-img.png" alt="">
-                            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Consectetur aspernatur quisquam
+                            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Consectetur aspernatur
+                                quisquam
                                 dolorum magni molestias.</p>
                         </div>
                     </div>
@@ -87,7 +162,48 @@
             </section>
         </article>
     </main>
-    <footer>
+    <footer class="mainfooter" role="contentinfo">
+        <div class="footer-middle">
+            <div class="container">
+                <div class="row">
+                    <div class="col-md-3 col-sm-6">
+                        <!--Column1-->
+                        <div class="footer-pad">
+                            </h4>
+                            <h4>If you have any questions feel free to contact us at info@teamsmoe.co.uk
+                            </h4>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="col-md-3 col-sm-6">
+                        <!--Column1-->
+                    </div>
+                    <div class="col-md-3 col-sm-6">
+                        <!--Column1-->
+                        <div class="footer-pad">
+                            <h4>Our locations</h4>
+                            <ul class="list-unstyled">
+                                <li><a href="#">Birmingham, UK </a></li>
+                                <li><a href="#">London, UK </a></li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="col-md-3">
+                        <h4>Follow Us</h4>
+                        <ul class="social-network social-circle">
+                            <li><a href="#" class="icoFacebook" title="Facebook"><i class="fa fa-facebook"></i></a></li>
+                            <li><a href="#" class="icoLinkedin" title="Linkedin"><i class="fa fa-linkedin"></i></a></li>
+
+                        </ul>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-md-12 copy">
+                        <p class="text-center">&copy; Copyright 2022 - SMOE All rights reserved.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
     </footer>
     <script>
         function myFunction() {
