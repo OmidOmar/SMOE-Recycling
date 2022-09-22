@@ -164,8 +164,9 @@ form>input,
     text-align: center;
 }
 
-input:hover {
-    border: solid 2px rgb(149, 149, 149);
+form > input:hover,
+.ct-pc > input:hover {
+  border: solid 2px rgb(149, 149, 149);
 }
 
 ::-webkit-input-placeholder {
