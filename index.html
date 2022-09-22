@@ -9,19 +9,36 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <title>SMOE Recycling</title>
 </head>
 
 <body>
     <header>
-        <div id="container">
-            <img id="logo" src="./img/logo.png" alt="recycling logo">
+        <!-- <div id="container">
+            
             <nav>
                 <ul id="nav-list">
                     <li><a href="#">HOME </a></li>
                     <li><a href="#">CONTACT US</a></li>
                     <li><a href="#">ABOUT US</a> </li>
                 </ul>
+
+            </nav>
+        </div> -->
+
+        <!-- Top Navigation Menu -->
+        <div id="container">
+            <img id="logo" src="./img/logo.png" alt="recycling logo">
+            <nav>
+                <ul id="nav-list">
+                    <li><a href="#news">News</a></li>
+                    <li><a href="#contact">Contact</a></li>
+                    <li><a href="#about">About</a></li>
+                </ul>
+                <a href="javascript:void(0);" class="icon" onclick="myFunction()">
+                    <i class="fa fa-bars"></i>
+                </a>
             </nav>
         </div>
         <div id="tagline">
@@ -31,6 +48,7 @@
                 </h1>
             </div>
         </div>
+
     </header>
     <main>
         <article>
@@ -71,6 +89,17 @@
     </main>
     <footer>
     </footer>
+    <script>
+        function myFunction() {
+            var x = document.getElementById("nav-list");
+            if (x.style.display === "block") {
+                x.style.display = "none";
+            } else {
+                x.style.display = "block";
+            }
+        }
+    </script>
 </body>
+
 
 </html>
