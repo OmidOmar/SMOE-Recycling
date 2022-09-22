@@ -15,19 +15,83 @@
             <div>
                 <div>
                     <nav>menu</nav>
-                
+
                 </div>
                 <div>logo</div>
             </div>
         </div>
-        
+
     </header>
     <main>
         <article>
-            <section id="`">
+            <section id="content">
             </section>
-            <section id="how-it-works"></section>
-            <section id="form"></section>
+            <section id="how-it-works">
+                <header>
+                    <h1>How It Works</h1>
+                </header>
+                <main>
+                    <div class="steps">
+                        <h3>Gather your recycling</h3>
+                        <p>Separate, gather, and find the approximate weight of your recycling</p>
+                    </div>
+                    <img src="images/arrow.png" alt="arrow" class="arrow">
+                    <div class="steps">
+                        <h3>Fill out the form below</h3>
+                        <p>Use the form below to enter your information and select after you submit</p>
+                    </div>
+                    <img src="images/arrow.png" alt="arrow" class="arrow">
+                    <div class="steps">
+                        <h3>Wait for pickup!</h3>
+                        <p>That's it! Your job is done and your recycling will soon be collected!</p>
+                    </div>
+                </main>
+            </section>
+            <section id="form">
+                <form action="">
+                    <label for="first-name"></label>
+                    <input type="text" id="first-name" placeholder="First Name" required>
+
+                    <label for="surname"></label>
+                    <input type="text" id="surname" placeholder="Surname" required>
+
+                    <label for="email"></label>
+                    <input type="email" name="email" id="email" placeholder="Email" required>
+
+                    <label for="phone-number"></label>
+                    <input type="tel" name="phone-number" id="phone-number" placeholder="Phone Number" required>
+
+
+                    <label for="address"></label>
+                    <input type="text" name="address" id="address" placeholder="Address" required>
+
+                    <label for="address-2"></label>
+                    <input type="text" name="address-2" id="address-2" placeholder="Address">
+
+                    <section class="ct-pc">
+                        <label for="city" class="ct"></label>
+                        <input type="text" name="city" id="city" placeholder="City" required>
+
+                        <label for="postcode" class="pc"></label>
+                        <input type="text" name="postcode" id="post-code" placeholder="Postcode" required>
+
+                    </section>
+                    <label for="materials">Materials</label>
+                    <p>*
+                        <em>Hold down CTRL(Windows) or CMD(Mac) buttons on your keyboard to select multiple options</em>
+                    </p>
+                    <select name="city" id="city" multiple>
+                        <option value="0" selected disabled><em>Select materials</em></option>
+                        <option value="1">Paper</option>
+                        <option value="2">Glass</option>
+                        <option value="3">Cans</option>
+                        <option value="4">Plastic</option>
+                    </select>
+                    <label for="weight"></label>
+                    <input type="number" name="weight" id="wight" placeholder="Approximate weight">
+                    <button type="submit">Submit</button>
+                </form>
+            </section>
             <section id="testimonials"></section>
         </article>
 
