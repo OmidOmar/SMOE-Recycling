@@ -27,6 +27,7 @@ header {
 
 #testimonials>div>h1 {
     font-size: 10vw;
+    margin: 50px;
 }
 
 .feedback {
@@ -38,6 +39,7 @@ header {
 
 .feedback>div>img {
     width: 150px;
+    margin-bottom: 25px;
 }
 
 #tagline {
@@ -143,7 +145,7 @@ form {
     flex-direction: column;
     padding: 2rem 4rem;
     margin: 2rem;
-    max-width: 70%;
+    max-width: 100%;
     background-color: white;
     border-radius: 2%;
 }
@@ -250,7 +252,7 @@ footer a:hover {
 }
 
 h4 {
-    font-size: 0.4px;
+    font-size: 26.4px;
 }
 
 /* footer social icons */
@@ -438,9 +440,7 @@ ul.social-network li {
         margin: 0rem 1rem;
     }
 
-    form {
-        max-width: 30%;
-    }
+    
 
 
 }
@@ -451,9 +451,7 @@ ul.social-network li {
 
     }
 
-    form {
-        max-width: 50%;
-    }
+    
 
     .arrow {
         max-height: 10%;
