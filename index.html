@@ -5,26 +5,64 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css">
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js"></script>
+    <link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet">
     <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <title>SMOE Recycling</title>
 </head>
 
 <body>
     <header>
-        <div>
-            <div>
-                <div>
-                    <nav>menu</nav>
+        <!-- <div id="container">
+            
+            <nav>
+                <ul id="nav-list">
+                    <li><a href="#">HOME </a></li>
+                    <li><a href="#">CONTACT US</a></li>
+                    <li><a href="#">ABOUT US</a> </li>
+                </ul>
+            </nav>
+        </div> -->
 
-                </div>
-                <div>logo</div>
+        <!-- Top Navigation Menu -->
+        <div id="container">
+            <img id="logo" src="./img/logo.png" alt="recycling logo">
+            <nav>
+                <ul id="nav-list">
+                    <li><a href="#news">Home</a></li>
+                    <li><a href="#contact">Contact</a></li>
+                    <li><a href="#about">About</a></li>
+                </ul>
+                <a href="javascript:void(0);" class="icon" onclick="myFunction()">
+                    <i class="fa fa-bars"></i>
+                </a>
+            </nav>
+        </div>
+        <div id="tagline">
+            <div id="tg-background">
+                <h1>
+                    Save the planet by recycling
+                </h1>
             </div>
         </div>
 
     </header>
     <main>
         <article>
-            <section id="content">
+            <section id="text-content">
+                <h1>“…soon our dumpster was less full and the paper, cardboard, cans and glass and plastic bottles were
+                    getting a
+                    second
+                    chance at becoming resources for other to use again. It felt great to do this for our community.”
+                </h1>
+                <h1>We collect your glass and plastic bottles <br> from your doorstep and take it to be recycled. <br>
+                    You can also
+                    recycle food waste too.</h1>
             </section>
             <section id="how-it-works">
                 <header>
@@ -35,12 +73,12 @@
                         <h3>Gather your recycling</h3>
                         <p>Separate, gather, and find the approximate weight of your recycling</p>
                     </div>
-                    <img src="images/arrow.png" alt="arrow" class="arrow">
+                    <img src="img/arrow.png" alt="arrow" class="arrow">
                     <div class="steps">
                         <h3>Fill out the form below</h3>
                         <p>Use the form below to enter your information and select after you submit</p>
                     </div>
-                    <img src="images/arrow.png" alt="arrow" class="arrow">
+                    <img src="img/arrow.png" alt="arrow" class="arrow">
                     <div class="steps">
                         <h3>Wait for pickup!</h3>
                         <p>That's it! Your job is done and your recycling will soon be collected!</p>
@@ -78,7 +116,8 @@
                     </section>
                     <label for="materials">Materials</label>
                     <p>*
-                        <em>Hold down CTRL(Windows) or CMD(Mac) buttons on your keyboard to select multiple options</em>
+                        <em>Hold down CTRL(Windows) or CMD(Mac) buttons on your keyboard to select multiple
+                            options</em>
                     </p>
                     <select name="city" id="city" multiple>
                         <option value="0" selected disabled><em>Select materials</em></option>
@@ -92,14 +131,95 @@
                     <button type="submit">Submit</button>
                 </form>
             </section>
-            <section id="testimonials"></section>
+            <section id="testimonials">
+                <div>
+                    <h1>Testimonials</h1>
+                </div>
+                <div id="feedbacks">
+                    <div class="feedback">
+                        <div>
+                            <img src="./img/testimonial-img.png" alt="">
+                            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Sed repellendus nostrum
+                                eligendi
+                                esse voluptatem,</p>
+
+                        </div>
+                    </div>
+                    <div class="feedback">
+                        <div>
+                            <img src="./img/testimonial-img.png" alt="">
+                            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ullam, ex ipsam! Dicta culpa
+                                sequi, amet autem officia.</p>
+                        </div>
+                    </div>
+                    <div class="feedback">
+                        <div>
+                            <img src="./img/testimonial-img.png" alt="">
+                            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Consectetur aspernatur
+                                quisquam
+                                dolorum magni molestias.</p>
+                        </div>
+                    </div>
+                </div>
+            </section>
         </article>
-
     </main>
-    <footer>
-
+    <footer class="mainfooter" role="contentinfo">
+        <div class="footer-middle">
+            <div class="container">
+                <div class="row">
+                    <div class="col-md-3 col-sm-6">
+                        <!--Column1-->
+                        <div class="footer-pad">
+                            </h4>
+                            <h4>If you have any questions feel free to contact us at info@teamsmoe.co.uk
+                            </h4>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="col-md-3 col-sm-6">
+                        <!--Column1-->
+                    </div>
+                    <div class="col-md-3 col-sm-6">
+                        <!--Column1-->
+                        <div class="footer-pad">
+                            <h4>Our locations</h4>
+                            <ul class="list-unstyled">
+                                <li><a href="#">Birmingham, UK </a></li>
+                                <li><a href="#">London, UK </a></li>
+                                <li>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="col-md-3">
+                        <h4>Follow Us</h4>
+                        <ul class="social-network social-circle">
+                            <li><a href="#" class="icoFacebook" title="Facebook"><i class="fa fa-facebook"></i></a></li>
+                            <li><a href="#" class="icoLinkedin" title="Linkedin"><i class="fa fa-linkedin"></i></a></li>
+                        </ul>
+                        </ul>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-md-12 copy">
+                        <p class="text-center">&copy; Copyright 2022 - SMOE All rights reserved.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
     </footer>
-
+    <script>
+        function myFunction() {
+            var x = document.getElementById("nav-list");
+            if (x.style.display === "block") {
+                x.style.display = "none";
+            } else {
+                x.style.display = "block";
+            }
+        }
+    </script>
 </body>
+
 
 </html>
